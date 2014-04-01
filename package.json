@@ -1,0 +1,23 @@
+{
+  "name": "debug-plumby",
+  "version": "0.0.0",
+  "description": "Debug plugin for plumby",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bredele/debug-plumby.git"
+  },
+  "keywords": [
+    "plumby",
+    "debug",
+    "plugin"
+  ],
+  "author": "Olivier Wietrich <olivier.wietrich@gmail.com> (http://github.com/bredele)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/debug-plumby/issues"
+  }
+}
