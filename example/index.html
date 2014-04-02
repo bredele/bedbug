@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Debug plugin</title>
+</head>
+<body>
+	<pre>
+		Build the example:
+		<code>
+			make build
+		</code>
+		and check the console.
+	</pre>
+	<script src="../build/build.js"></script>
+	<script>
+	  var mail = require('plumby')();
+	  var chat = require('plumby')();
+	  var debug = require('debug-plumby');
+
+	  mail.use(debug);
+	  mail.enable('debug');
+	  chat.use(debug);
+	  chat.enable('debug');
+	  
+	  setInterval(function() {
+	  	mail.debug('hello %s', 'mail');
+	  }, 500);
+	  setInterval(function() {
+	  	chat.debug('hello %s', 'chat');
+	  }, 1000);
+
+	  setTimeout(function() {
+	  	mail.use('chat', chat);
+	  }, 2000);
+	</script>
+</body>
+</html>

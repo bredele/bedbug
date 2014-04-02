@@ -4,7 +4,8 @@
   "description": "Debug plugin for plumby",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+  },
   "development": {
     "bredele/plumby": "*"
   },

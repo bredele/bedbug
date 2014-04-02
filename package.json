@@ -1,6 +1,6 @@
 {
   "name": "debug-plumby",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Debug plugin for plumby",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,7 @@
   "devDependencies": {
     "plumby": "0.0.1",
     "mocha": "~1.18.2"
+  },
+  "dependencies": {
   }
 }

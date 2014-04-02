@@ -1,7 +1,7 @@
 
 # debug-plumby
 
-  Debug plugin for plumby
+  Debug plugin for [plumby](http://github.com/bredele/plumby)
 
 ## Installation
 
@@ -9,9 +9,40 @@
 
     $ component install bredele/debug-plumby
 
-## API
 
+## Usage
 
+ Print log (with path and humanized timestamp) if debug mode is enabled.
+
+```js
+var debug = require('debug');
+var app = plumby();
+
+app.use(debug);
+app.debug('hello');
+// => nothing
+
+app.enable('debug');
+app.debug('hello %s', 'world');
+// => /: hello world +0ms
+```
+
+## Tips
+
+ [Plumby](http://github.com/bredele/plumby) allows you to inject plugins and configs into a type of app in order to not repeat yourself.
+
+```js
+var plumby = require('plumby');
+plumby
+  .inject('debug', {
+    debug: true
+  })
+  .use(debug);
+
+//app is in debug mode by default
+var app = plumby('debug');
+app.debug('hello')
+```
 
 ## License
 
