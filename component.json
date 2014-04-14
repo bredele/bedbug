@@ -1,13 +1,13 @@
 {
-  "name": "debug-plumby",
-  "repo": "bredele/debug-plumby",
-  "description": "Debug plugin for plumby",
+  "name": "debug-wall",
+  "repo": "bredele/debug-wall",
+  "description": "Debug plugin for wall",
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
   },
   "development": {
-    "bredele/plumby": "*"
+    "bredele/wall": "*"
   },
   "license": "MIT",
   "main": "index.js",

@@ -1,27 +1,27 @@
 {
-  "name": "debug-plumby",
+  "name": "debug-wall",
   "version": "0.0.1",
-  "description": "Debug plugin for plumby",
+  "description": "Debug plugin for wall",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bredele/debug-plumby.git"
+    "url": "git://github.com/bredele/debug-wall.git"
   },
   "keywords": [
-    "plumby",
+    "wall",
     "debug",
     "plugin"
   ],
   "author": "Olivier Wietrich <olivier.wietrich@gmail.com> (http://github.com/bredele)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bredele/debug-plumby/issues"
+    "url": "https://github.com/bredele/debug-wall/issues"
   },
   "devDependencies": {
-    "plumby": "0.0.1",
+    "wall": "0.0.1",
     "mocha": "~1.18.2"
   },
   "dependencies": {

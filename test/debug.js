@@ -1,12 +1,12 @@
 var debug = require('..');
 var assert = require('assert');
-var plumby = require('plumby');
+var wall = require('wall');
 
 describe('debug', function() {
 	
 	var app;
 	beforeEach(function() {
-		app = plumby();
+		app = wall();
 		app.use(debug);
 	});
 

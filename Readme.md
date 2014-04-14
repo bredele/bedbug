@@ -1,13 +1,13 @@
 
-# debug-plumby
+# debug-wall
 
-  Debug plugin for [plumby](http://github.com/bredele/plumby)
+  Debug plugin for [wall](http://github.com/bredele/wall)
 
 ## Installation
 
   Install with [component(1)](http://component.io):
 
-    $ component install bredele/debug-plumby
+    $ component install bredele/debug-wall
 
 
 ## Usage
@@ -16,7 +16,7 @@
 
 ```js
 var debug = require('debug');
-var app = plumby();
+var app = wall();
 
 app.use(debug);
 app.debug('hello');
@@ -29,18 +29,18 @@ app.debug('hello %s', 'world');
 
 ## Tips
 
- [Plumby](http://github.com/bredele/plumby) allows you to inject plugins and configs into a type of app in order to not repeat yourself.
+ [wall](http://github.com/bredele/wall) allows you to inject plugins and configs into a type of app in order to not repeat yourself.
 
 ```js
-var plumby = require('plumby');
-plumby
+var wall = require('wall');
+wall
   .inject('debug', {
     debug: true
   })
   .use(debug);
 
 //app is in debug mode by default
-var app = plumby('debug');
+var app = wall('debug');
 app.debug('hello')
 ```
 
