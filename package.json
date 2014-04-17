@@ -1,6 +1,6 @@
 {
-  "name": "debug-wall",
-  "version": "0.0.1",
+  "name": "bedbug",
+  "version": "0.1.0",
   "description": "Debug plugin for wall",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bredele/debug-wall.git"
+    "url": "git://github.com/bredele/bedbug.git"
   },
   "keywords": [
     "wall",
@@ -18,7 +18,7 @@
   "author": "Olivier Wietrich <olivier.wietrich@gmail.com> (http://github.com/bredele)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bredele/debug-wall/issues"
+    "url": "https://github.com/bredele/bedbug/issues"
   },
   "devDependencies": {
     "wall": "0.0.1",

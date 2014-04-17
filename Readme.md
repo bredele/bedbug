@@ -1,21 +1,25 @@
 
-# debug-wall
+# Bedbug
 
-  Debug plugin for [wall](http://github.com/bredele/wall)
+  Bedbug is a debug component that feed exclusively on your application logs.
+
+  Bedbug has been built for **[wall](http://github.com/bredele/wall)**.
 
 ## Installation
 
-  Install with [component(1)](http://component.io):
+  with [component](http://github.com/component/component):
 
-    $ component install bredele/debug-wall
+    $ component install bredele/bedbug
 
+  with [browserify](http://browserify.org/):
 
+    $ npm install bedbug
 ## Usage
 
  Print log (with path and humanized timestamp) if debug mode is enabled.
 
 ```js
-var debug = require('debug');
+var debug = require('bedbug');
 var app = wall();
 
 app.use(debug);
@@ -29,7 +33,7 @@ app.debug('hello %s', 'world');
 
 ## Tips
 
- [wall](http://github.com/bredele/wall) allows you to inject plugins and configs into a type of app in order to not repeat yourself.
+ **[wall](http://github.com/bredele/wall)** allows you to inject plugins and configs into a type of app in order to not repeat yourself.
 
 ```js
 var wall = require('wall');
@@ -48,7 +52,7 @@ app.debug('hello')
 
   The MIT License (MIT)
 
-  Copyright (c) 2014 <copyright holders>
+  Copyright (c) 2014 <olivier.wietrich@gmail.com> Olivier Wietrich
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
